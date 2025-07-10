@@ -2,10 +2,10 @@ spring:
   application:
     name: cube-ms-eureka
 server:
-  port: 8761
+  port: ${PORT:8761}
 eureka:
   instance:
-    hostname: localhost
+    hostname: ${HOSTNAME:localhost}
     prefer-ip-address: true
   client:
     register-with-eureka: false
